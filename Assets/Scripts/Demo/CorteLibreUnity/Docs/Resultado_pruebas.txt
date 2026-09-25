@@ -1,0 +1,8 @@
+PASS: arbitrary diagonal, retrace, crossing
+PASS: existing edges, existing vertices, rectangle clipping
+PASS: start and end inside one face
+PASS: closed curved stroke
+PASS: free curved stroke
+PASS: 50 mixed arbitrary segments
+PASS: transactional budget rollback
+SUCCESS: 274904 assertions; native C# core executed.

@@ -3,6 +3,12 @@ using System.Collections;
 
 public class ControllerVibration : MonoBehaviour
 {
+    public static ControllerVibration Instance;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
     public void Vibrate(float duration, OVRInput.Controller controller)
     {
         StartCoroutine(VibrateCoroutine(duration, controller));

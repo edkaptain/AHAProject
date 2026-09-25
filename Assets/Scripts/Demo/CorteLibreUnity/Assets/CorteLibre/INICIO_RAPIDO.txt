@@ -1,0 +1,23 @@
+CORTE LIBRE EN UNITY
+
+1. Conserva todos los scripts y el shader dentro de Assets/CorteLibre.
+2. Espera a que Unity compile.
+3. Tools > Corte libre > Crear escena de prueba.
+4. Play. En Game, mantén clic izquierdo y arrastra sobre el tejido, fuera del panel.
+
+En la esfera, componente MouseScalpelSphere:
+  Follow Mouse On Click = true: sigue al ratón mientras mantienes clic izquierdo.
+  Follow Mouse On Click = false: tú controlas su Transform.
+  Cutting Enabled: activa o desactiva las incisiones.
+
+Se necesita movimiento para dibujar un corte. La esfera comprueba contacto
+directamente con los triángulos; no hace falta Rigidbody ni MeshCollider.
+
+El menú genera cámara, membrana, esfera, base, materiales y escena en
+Assets/CorteLibre/Generated. Restaurar membrana borra los cortes de Play.
+
+Esta es una membrana plana sin grosor, con remallado real y apertura geométrica.
+No incluye simulación elástica ni aplicación directa a órganos importados.
+El núcleo C# fue compilado y probado. Falta la verificación visual en Unity.
+
+Lee LEEME.md y Docs/VALIDACION.md en la raíz del ZIP para la explicación completa.
